@@ -1,0 +1,8 @@
+flask
+requests
+langchain
+chromadb
+sentence-transformers
+pickle-mixin
+google-generativeai
+numpy

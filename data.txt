@@ -1,0 +1,4 @@
+Python ZeroDivisionError happens when dividing by zero.
+IndexError happens when accessing invalid list index.
+TypeError happens when wrong datatype is used.
+Always use try-except for error handling.
