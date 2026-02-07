@@ -1,7 +1,9 @@
 from sentence_transformers import SentenceTransformer
 import pickle
+import numpy as np
 
-model = SentenceTransformer('all-MiniLM-L6-v2')
+# Load embedding model locally
+model = SentenceTransformer("all-MiniLM-L6-v2")
 
 # Load documents
 with open("data.txt") as f:
@@ -9,9 +11,10 @@ with open("data.txt") as f:
 
 # Create embeddings
 embeddings = model.encode(docs)
+embeddings = np.array(embeddings)
 
 # Save embeddings
 with open("embeddings.pkl", "wb") as f:
     pickle.dump((docs, embeddings), f)
 
-print("Embeddings saved!")
+print("Embeddings saved locally! ✅")

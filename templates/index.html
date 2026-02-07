@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Bug Hunter</title>
+</head>
+<body>
+    <h1>AI Bug Hunter</h1>
+    <form method="POST">
+        <textarea name="code" rows="10" cols="60" placeholder="Paste your code here..."></textarea><br>
+        <button type="submit">Analyze</button>
+    </form>
+
+    {% if result %}
+        <h2>Result:</h2>
+        <pre>{{ result }}</pre>
+    {% endif %}
+</body>
+</html>

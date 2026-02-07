@@ -1,8 +1,4 @@
-flask
-requests
-langchain
-chromadb
-sentence-transformers
-pickle-mixin
-google-generativeai
+Flask
 numpy
+google-generativeai
+scikit-learn
